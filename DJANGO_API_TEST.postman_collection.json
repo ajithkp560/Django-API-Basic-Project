@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "ea7c0625-5dc8-4e0b-b744-136526fa6c5b",
+		"name": "DJANGO_API_TEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "40426875"
+	},
+	"item": [
+		{
+			"name": "CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"model\": \"Ford Mustang\",\r\n    \"year\": 2021\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/create"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/update/1",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"year\": 2016\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/update/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/list"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/delete/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/delete/4"
+			},
+			"response": []
+		}
+	]
+}
